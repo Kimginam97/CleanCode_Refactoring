@@ -66,6 +66,7 @@ function ReactComponent() {
                 return rows;
             })()}
 
+            // 리팩토링
             {   // map을 이용해서 계속 리턴된 값을 받아온다
                 objectRows.map((obj,i) => (
                     <ObjectRow key={i} data={objectRows[obj]} />
@@ -87,7 +88,8 @@ function ReactComponent() {
                 else conditionOne;
                 return <span>Three</span>;
             })}
-            
+
+            // 리팩토링
             {conditionOne && <span>One</span>}
             {conditionOne && <span>Two</span>}
             {!conditionOne && <span>Three</span>}
