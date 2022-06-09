@@ -1,0 +1,37 @@
+/**
+ * 부정조건문을 지양하는 이유
+ * 1. 생각을 여러번 해야한다
+ * 2. 프로그래밍 언어 자체로  if문이 처음부터 오고 true부터 실행시킨다
+ *  */
+
+
+/**
+ * 부정조건문을 사용할때
+ * 1. Early Return
+ * 2. Form Validation 
+ * 3. 보안 혹은 검사하는 로직
+ *  */ 
+
+const isCondition = true;
+const isNotCondition = false;
+
+// NaN
+// Not a Number
+function isNumber(num) {
+    return !Number.isNaN(num) && typeof num === 'number'
+}
+
+// 숫자일때만
+if (isNumber(3)) {
+    console.log('숫자입니다');
+}
+
+// 부정조건문 (x)
+if (!isCondition) {
+    console.log('거짓인 경우에만 실행');
+}
+
+if (isNotCondition) {
+    console.log('거짓인 경우에만 실행');
+}
+
