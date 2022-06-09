@@ -59,5 +59,22 @@ function alertMessage(isAdult) {
     return isAdult ? '입장이 가능합니다.' : '입장이 불가능합니다.';
 }
 
+// function alertMessage(isAdult) {
+//     const isAdult ? '입장이 가능합니다.' : '입장이 불가능합니다.';
+
+//     if (isAdult) {
+//         // some logic
+//     }
+    
+//     if (isAdult && gender === 'Man') {
+        
+//     }
+
+//     if (isAdult && gender === 'Man') {
+        
+//     }
+
+// }
+
 
 
